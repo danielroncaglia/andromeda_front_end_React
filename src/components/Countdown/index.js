@@ -76,34 +76,41 @@ class Countdown extends Component {
   render() {
     const countDown = this.state;
 
-    return (
-      <div className="Countdown">
-        <span className="Countdown-col">
-          <strong className="Countdown-col-element">
-              {this.addLeadingZeros(countDown.days)} {countDown.days === 1 ? 'Day ' : 'Days '}  -
-          </strong>
-        </span>
+    if (countDown.sec <1){
+      return (
+        <div> <strong>Deadline time reached</strong> </div>
+      );
+    }else{
+      return (
 
-        <span className="Countdown-col">
-          <span className="Countdown-col-element">
-            <strong> - {this.addLeadingZeros(countDown.hours)}h </strong>
+        <div className="Countdown">
+          <span className="Countdown-col">
+            <strong className="Countdown-col-element">
+                {this.addLeadingZeros(countDown.days)} {countDown.days === 1 ? 'Day ' : 'Days '}  -
+            </strong>
           </span>
-        </span>
-
-
-        <span className="Countdown-col">
-          <span className="Countdown-col-element">
-            <strong>{this.addLeadingZeros(countDown.min)}m </strong>
+  
+          <span className="Countdown-col">
+            <span className="Countdown-col-element">
+              <strong> - {this.addLeadingZeros(countDown.hours)}h </strong>
+            </span>
           </span>
-        </span>
-
-        <span className="Countdown-col">
-          <span className="Countdown-col-element">
-            <strong>{this.addLeadingZeros(countDown.sec)}s </strong>
+  
+  
+          <span className="Countdown-col">
+            <span className="Countdown-col-element">
+              <strong>{this.addLeadingZeros(countDown.min)}m </strong>
+            </span>
           </span>
-        </span>
-      </div>
-    );
+  
+          <span className="Countdown-col">
+            <span className="Countdown-col-element">
+              <strong>{this.addLeadingZeros(countDown.sec)}s </strong>
+            </span>
+          </span>
+        </div>
+      );
+    }
   }
 }
 
