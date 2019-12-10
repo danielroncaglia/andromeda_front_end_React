@@ -1,0 +1,35 @@
+.menu__div__container{
+    width: 400px;
+    background-color: #F4F6FA;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 8%;
+    z-index: 99;
+    box-shadow: -4px 0px 5px 0px rgba(191,191,191,1);
+}
+
+.menu__h1__title{
+    font-size: 24px;
+    text-align: center;
+    margin: 40px 0px 40px 0px;
+}
+
+.btn_submit{
+    color: #F4F6FA;
+}
+
+.divGroup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputControl{
+    width: 20em;
+}
+
+.inputControl_type{       
+    text-align: center;
+}
+

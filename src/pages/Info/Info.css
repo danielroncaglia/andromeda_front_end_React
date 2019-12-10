@@ -1,0 +1,36 @@
+.about__contain__info {
+  /* padding-top: 7%; */
+  height: 100vh;
+}
+
+.about__title__title {
+  width: 48%;
+  margin: auto;
+  margin-top: 15% !important;
+  margin-bottom: 10% !important;
+  color: #403076;
+}
+
+.about__button__link {
+  margin: auto;
+  margin-top: 10% !important;
+}
+
+.about__list__faq {
+  border-right: none !important;
+  border-left: none !important;
+}
+
+.about__card__header {
+  background-color: white !important;
+  justify-content: space-between;
+}
+
+.arrow {
+  transition: transform 1s;
+  transform-origin: center;
+}
+
+.arrow__rotate {
+  transform: rotate(180deg);
+}

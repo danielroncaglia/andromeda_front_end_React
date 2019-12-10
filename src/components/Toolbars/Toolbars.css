@@ -1,0 +1,18 @@
+.toolbars__button__showModal{
+    border: none;
+    background-color: transparent;
+    width: auto;
+    outline: none;
+}
+
+.toolbars__modal__tabs{
+    flex-direction: row !important;
+    width: 100% !important;
+}
+
+#uncontrolled-tab-example-tab-usuarios {
+    width: 50% !important;
+}
+#uncontrolled-tab-example-tab-times {
+    width: 50% !important;
+}
